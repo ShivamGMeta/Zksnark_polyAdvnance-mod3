@@ -49,14 +49,5 @@ npx hardhat run scripts/deploy.ts
 npx hardhat run scripts/deploy.ts --network Sepolia
 ```
 
-# Deployment
-`npx hardhat run scripts/deploy.ts --network mumbai`
-This script does 4 things:
-1. It deploys the CustonCircuitVerifier.sol contract.
-2. Generates a proof from circuit intermediaries with `generateProof()`.
-3. Generates calldata with `generateCallData()`.
-4. Calls `verifyProof()` on the verifier contract with calldata.
-5. Lastly, the asserted output should turn out to be  `TRUE`.
-
 ![image](https://github.com/user-attachments/assets/a904dfde-3b78-4e79-a006-f395fd470756)
 
